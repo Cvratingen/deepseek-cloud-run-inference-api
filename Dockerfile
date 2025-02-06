@@ -12,7 +12,8 @@ COPY . .
 RUN pip3 install --no-cache-dir -r requirements.txt
 
 # Model download with optimizations
-RUN python3 download_models.py
+RUN python3 download_model.py
+RUN python3 download_tokeniser.py
 
 EXPOSE 8080
 CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8080"]
