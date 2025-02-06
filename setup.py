@@ -14,4 +14,4 @@ setup(
         "httpx",
         "pytest-asyncio",
     ],
-) 
+)
