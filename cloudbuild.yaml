@@ -42,7 +42,7 @@ images:
 
 # Build options
 options:
-  machineType: "e2-highcpu-32"
+  machineType: "e2-highmem-4"
   diskSizeGb: 250 # Increased disk space otherwise the model built on cloud build exceeds default space
   logging: "CLOUD_LOGGING_ONLY"
   env:
